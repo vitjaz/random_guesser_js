@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Рандомный гадатель</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Рандомный гадатель</h1>
+    <div class="alert alert-danger none" role="alert">
+      Ваши попытки закончились, нажмите попробовать снова
+    </div>
+    <div class="alert alert-success none" role="alert">
+      ...
+    </div>
+    <div class="alert alert-info none" role="alert">
+      Рандомное число сгенерировано!
+    </div>
+    <form>
+      <div class="row">
+        <div>
+          <label for="numberInput">Введите число от 0 до 3</label>
+          <input class="u-full-width" type="number" placeholder="Ваше число" id="number-input">
+        </div>
+      </div>
+        <div class="row">
+          <button type="button" class="button-primary check-number-btn u-full-width">Проверить число</button>
+        </div>
+        <div class="row">
+          <button type="button" class="button-primary try-again-btn u-full-width">Попробовать снова</button>
+        </div>
+    </form>
+    <h2 class="count-text">Попытки: 3</h2>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

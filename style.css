@@ -1,0 +1,13 @@
+.button-disabled {
+  cursor: not-allowed;
+  background-color: brown !important;
+  border-color: crimson !important;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
